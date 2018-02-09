@@ -1,19 +1,19 @@
-å…¬å…±ç»„ä»¶ï¼š
-    1.å¼¹çª—ï¼ˆè­¦å‘Šï¼‰ç»„ä»¶ï¼š
+¹«¹²×é¼þ£º
+    1.µ¯´°£¨¾¯¸æ£©×é¼þ£º
         App.js--->Alert
-        å¦‚æžœç‚¹å‡»ç¡®å®šï¼Œéœ€è¦æ‰§è¡Œå›žè°ƒå‡½æ•°ï¼Œåˆ™å…ˆè¦æ³¨å…¥å›žè°ƒå‡½æ•°ï¼Œä¾‹ï¼š
+        Èç¹ûµã»÷È·¶¨£¬ÐèÒªÖ´ÐÐ»Øµ÷º¯Êý£¬ÔòÏÈÒª×¢Èë»Øµ÷º¯Êý£¬Àý£º
         import {SEND_ALERT_STATUS, SEND_CALLBACK_STATUS} from '../../store/action';
         let {dispatch}=this.props
-        // 1.æ˜¾ç¤ºå¼¹çª—
-        dispatch({type:SEND_ALERT_STATUS,data:{ alertStatus:true, alertText:'ç¡®å®šè¦è·³è½¬é¡µé¢å—ï¼Ÿ' }})
-        // 2.æ³¨å…¥å›žè°ƒ
+        // 1.ÏÔÊ¾µ¯´°
+        dispatch({type:SEND_ALERT_STATUS,data:{ alertStatus:true, alertText:'È·¶¨ÒªÌø×ªÒ³ÃæÂð£¿' }})
+        // 2.×¢Èë»Øµ÷
         dispatch({type:SEND_CALLBACK_STATUS,data:{ callback:()=>{
-                    this.setState({title:'ä¼šå‘˜åˆ—è¡¨'})
+                    this.setState({title:'»áÔ±ÁÐ±í'})
                 } }})
-    2.loadingç»„ä»¶ï¼š
-        App.js--->Loadingï¼Œä¾‹ï¼š
+    2.loading×é¼þ£º
+        App.js--->Loading£¬Àý£º
         import {SEND_LOADING_STATUS} from '../../../store/action';
         dispatch({type: SEND_LOADING_STATUS,data:{loading:true}})
-    3.èŽ·å–Reduxæ•°æ®ï¼š
+    3.»ñÈ¡ReduxÊý¾Ý£º
         let {loadingData:{loading}} = this.props
         export default connect(({loadingData})=>{return {loadingData}})(App);
