@@ -7,9 +7,9 @@
     1.在文件夹下按住shift+鼠标右键选择Git Bash Here，打开git
 				
     2.git clone https://github.com/s674307019/react_demo.git
-				
+    
     3.进入react_demo：cd react_demo
-				
+    
     4.打开CMD，执行npm install
 				
     5.执行npm run start
